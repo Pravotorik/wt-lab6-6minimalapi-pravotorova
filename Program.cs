@@ -19,11 +19,8 @@ var app = builder.Build();
 //}
 
 // 6.3 Swagger UI
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 
 // Базовый endpoint — проверка, что API работает
